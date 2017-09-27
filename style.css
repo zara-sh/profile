@@ -1,0 +1,145 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html, body {
+
+    height: 100%;
+}
+/*.head{
+  background-size: cover;
+  background-color: black;
+}*/
+#head {
+  display: block;
+  background-color: #FB8641;
+}
+
+
+.header ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+.header li {
+    float: left;
+    border-right: 1px solid #bbb;
+}
+
+.header li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+.header li a:hover {
+    background-color: #111;
+}
+
+.hero {
+  width: 100%;
+  height: 100vh;
+
+    background-image: url("./images/laptop1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.typewriter {
+  background-color: #EDEAE5;
+  display: inline-block;
+  text-align: center;
+  border-radius: 10px;
+  opacity: 0.6;
+  margin-top: 150px;
+  margin-left: 50% ;
+  margin-bottom: 200px;
+  width: 50%;
+}
+.typewriter img {
+ width: 150px;
+ height: 150px;
+ border-radius: 50%;
+ opacity: 1;
+}
+
+.typewriter h1 {
+  color: #000;
+  font-family: monospace;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation:
+  typing 3.5s steps(30, end),
+  blink-caret .5s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  100% { border-color: orange }
+}
+
+.typewriter p{
+  font-size: 22px;
+}
+
+.typewriter .icon {
+  /*position: relative;*/
+  display: inline-block;
+  top: 400px;
+  border-right: 1px solid #bbb;
+
+  }
+
+.typewriter .icon  ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.typewriter .icon li {
+  display: inline-block;
+ }
+
+.typewriter .icon i {
+  display: block;
+  font-size: 30px;
+  text-decoration: none;
+}
+
+/*.table {
+  background: #e1eec3;  /* fallback for old browsers */
+ /*background: -webkit-linear-gradient(left, #f05053, #e1eec3);*/
+ /*background: -o-linear-gradient(left, #f05053, #e1eec3);*/
+ /*background: linear-gradient(to right, #f05053, #e1eec3);   Chrome 10-25, Safari 5.1-6  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */*/
+/*}*/*
+
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even){background-color: #f2f2f2
